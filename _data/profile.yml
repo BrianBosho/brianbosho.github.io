@@ -1,61 +1,56 @@
-primary_name: "Your Name"
+primary_name: "Brian Kipkirui"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Brian Kipkirui"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- logo: /assets/images/badges/cmu_logo.png
+  name: Research Associate, Carnegie Mellon University Africa
+# - name: Graduate Teaching Assistant, Carnegie Mellon University Africa
 
-
-email: "your@email.com"
-# cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+email: "briankiupkirui03@gmail.com"
+cv_link: /assets/pdf/BrianKipkirui_CV.pdf
+gscholar: your_scholar_id_here   # Replace with actual Google Scholar ID
+github: brianbosho
+twitter: ""                      # Add if you want, without '@'
+linkedin: brian-kipkirui
+orcid: ""                        # Add if applicable
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Research Associate at <a href="https://www.cmu.edu/africa/" target="_blank">Carnegie Mellon University Africa</a> 
+    (M.S. Engineering AI, 2025) working at the intersection of geometry-aware computer vision and efficient learning. 
+    My work spans diffusion-based visual data mining for low-resource urban traffic scenes, communication-efficient 
+    federated graph neural networks (FedProp), LLM-guided robotic planning (RoboCRAM), and 3D cryo-electron tomography segmentation.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    I aim to pursue a PhD in computer vision to advance robust 3D perception, depth/motion estimation, and scene reconstruction 
+    in real-world environments.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  Carnegie Mellon University Africa · Kigali, Rwanda
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: Carnegie Mellon University Africa
+  logo: /assets/images/badges/cmu_logo.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
-
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+    M.S. in Engineering Artificial Intelligence <br/>
+    GPA: 3.97/4.0
+  date:  May 2025
+- name: Jomo Kenyatta University of Agriculture and Technology
+  logo: /assets/images/badges/jkuat_logo.png
+  position: Dual B.Sc. in Electrical & Electronics Engineering; Electronics & Computer Engineering
+  date:  Nov. 2018
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Valedictorian, M.S. Engineering AI Class of 2025, CMU-Africa
+  date: 2025
+- name: Local Chair, African Computer Vision Summer School (ACVSS)
+  date: 2025
+- name: Smart Africa Scholarship Award
+  date: 2023
+- name: Jasiri Entrepreneurship Fellowship
+  date: 2023
+
