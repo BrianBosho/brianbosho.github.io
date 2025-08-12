@@ -2,7 +2,7 @@
 layout: publication
 title: "Generating the Unknown: A VAE-Based Approach to Creating Safety-Critical Scenarios for Autonomous Driving"
 date: 2024-08-10 00:00:00 +0000
-selected: true
+selected: false
 pub: "Machine Learning Research Project"
 pub_date: "2024"
 cover: /assets/images/covers/autonomous-driving-cover.jpg

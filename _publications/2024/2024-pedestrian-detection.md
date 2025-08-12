@@ -2,7 +2,7 @@
 layout: publication
 title: "Enhancing Vehicular Safety: A Computer Vision System for Pedestrian Detection and Depth Estimation"
 date: 2024-01-15 00:00:00 +0000
-selected: true
+selected: false
 pub: "Computer Vision & Safety Systems Project"
 pub_date: "2024"
 cover: /assets/images/covers/pedestrian-detection-cover.jpg

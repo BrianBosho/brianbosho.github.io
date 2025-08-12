@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "FedProp: A Principled, Communication-Free Approach to Federated Graph Learning"
-date: 2024-12-15 00:00:00 +0000
+date: 2025-08-06 00:00:00 +0000
 selected: true
 pub: "International Conference on Machine Learning"  # This is a dummy conference name
 pub_date: "2025"

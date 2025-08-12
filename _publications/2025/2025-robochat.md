@@ -1,10 +1,10 @@
 ---
 layout: publication
 title: "RoboCHAT: Bridging the Automation Gap with LLM-Guided Robotic Execution"
-date: 2024-05-15 00:00:00 +0000
-selected: true
+date: 2025-05-15 00:00:00 +0000
+selected: false
 pub: "Senior Capstone Project"
-pub_date: "2024"
+pub_date: "2025"
 cover: /assets/images/covers/robochat-cover.jpg
 abstract: >-
   RoboCHAT introduces a sophisticated, two-layered architecture that leverages Large Language Models (LLMs) to create an intuitive, natural language interface for controlling complex robots, achieving 89% command resolution accuracy and making robotics more accessible to non-expert users.
