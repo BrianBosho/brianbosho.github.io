@@ -17,6 +17,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
+future: true
 plugins:
   - jekyll-email-protect
 
@@ -35,6 +36,10 @@ plugins:
 # timezone: Asia/Shanghai
 
 collections:
-  - publications
-  - news
-  - showcase
+  publications:
+    output: true
+    permalink: /:collection/:name/
+  news:
+    output: false
+  showcase:
+    output: false

@@ -58,8 +58,11 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .cover-image {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
     max-height: 120px;
+    object-fit: cover;
+    border-radius: 0.3rem;
 }
 
 .abstract-body {
@@ -88,5 +91,46 @@ div.lazy {
 
 .email-text {
     font-family: Courier, monospace;
+}
+
+/* Simple publication page styling to match site theme */
+.publication-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.publication-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.publication-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    max-height: 400px; /* Limit maximum height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Additional constraint for very wide images */
+.publication-content img.wide-image {
+    max-height: 300px;
+}
+
+/* For figure containers */
+.publication-content .text-center img {
+    max-height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.publication-content .figure-caption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
