@@ -43,3 +43,6 @@ collections:
     output: false
   showcase:
     output: false
+  projects:
+    output: true
+    permalink: /projects/:path/

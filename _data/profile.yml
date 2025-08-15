@@ -18,14 +18,13 @@ orcid: ""                        # Add if applicable
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Research Associate at <a href="https://www.cmu.edu/africa/" target="_blank">Carnegie Mellon University Africa</a> 
-    (M.S. Engineering AI, 2025) working at the intersection of geometry-aware computer vision and efficient learning. 
-    My work spans diffusion-based visual data mining for low-resource urban traffic scenes, communication-efficient 
-    federated graph neural networks (FedProp), LLM-guided robotic planning (RoboCRAM), and 3D cryo-electron tomography segmentation.
+    I am a Research Associate at Carnegie Mellon University Africa, working with <a href="https://www.africa.engineering.cmu.edu/about/contact/directory/bios/barros-joao.html" target="_blank">Prof. João Barros</a>, where my research is focused on creating data-efficient AI systems for real-world, low-resource environments.
   </p>
   <p>
-    I aim to pursue a PhD in computer vision to advance robust 3D perception, depth/motion estimation, and scene reconstruction 
-    in real-world environments.
+    My interest lies in bridging the gap between advanced theory and deployable systems that solve tangible problems. Previously, I was a research intern in the <a href="https://xulabs.github.io/" target="_blank">Xulab</a> with Prof. Min Xu, where I applied 3D computer vision to accelerate discovery in computational biology (Cryo-ET). This experience, along with my work on LLM-powered robotics and federated learning, informs my current focus on vision foundation models and generative AI.
+  </p>
+  <p>
+    My journey into AI has been shaped by a deep-seated drive to use technology to create local solutions for global challenges. I am actively seeking a PhD or research-scientist role to continue tackling fundamental research problems and to collaborate on building systems that can create a meaningful impact on human welfare.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
