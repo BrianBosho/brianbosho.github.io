@@ -1,36 +1,29 @@
+---
 layout: project
 title: "Computer Vision for Pedestrian Detection & Depth Estimation"
-permalink: /project/pedestrian-detection/
+permalink: /projects/pedestrian-detection/
 
---- For the project list page (project_item.html) ---
-image: "/assets/img/projects/pedestrian_thumbnail.png"
+# For the project list page (project_item.html)
+image: "/assets/images/pedestrian-detection/pedestrian_thumbnail.png"
 context: "Course Project: Applied Computer Vision"
 summary: "Developed a two-stage perception system for autonomous vehicles, combining YOLOv5 for object detection and MiDaS for monocular depth estimation to identify and locate pedestrians in urban scenes."
 
---- For the detailed project page (project.html) ---
+# For the detailed project page (project.html)
 subtitle: "A Two-Stage Perception System for Autonomous Vehicle Safety"
-code_url: "https://www.google.com/search?q=https://github.com/brianbosho/pedestrian-detection"
+code_url: "https://github.com/brianbosho/pedestrian-detection"
 role: "Co-Researcher & Developer"
 technologies:
-
-Python
-
-PyTorch
-
-YOLOv5
-
-MiDaS
-
-CityPersons Dataset
+  - Python
+  - PyTorch
+  - YOLOv5
+  - MiDaS
+  - CityPersons Dataset
 contributions:
-
-YOLOv5 model fine-tuning
-
-MiDaS integration for depth estimation
-
-End-to-end pipeline development
-
-Performance evaluation (precision/recall)
+  - YOLOv5 model fine-tuning
+  - MiDaS integration for depth estimation
+  - End-to-end pipeline development
+  - Performance evaluation (precision/recall)
+---
 
 The Challenge: Ensuring Pedestrian Safety in Autonomous Driving
 A primary function of an autonomous vehicle's (AV) perception system is to reliably detect vulnerable road users, especially pedestrians. This task is challenging due to varying lighting conditions, occlusions, and diverse human appearances. Our objective was to build a robust system using only a single camera (monocular vision) to not only detect pedestrians but also to estimate their distance—critical information for the vehicle's planning module.

@@ -1,38 +1,30 @@
+---
 layout: project
 title: "RoboCHAT: LLM-Powered Human-Robot Interaction"
 permalink: /projects/robochat/
 
---- For the project list page (project_item.html) ---
-image: "/assets/img/projects/robochat_thumbnail.png"
+# For the project list page (project_item.html)
+image: "/assets/images/robochat/robochat_thumbnail.png"
 context: "Capstone Project at Carnegie Mellon University Africa"
 summary: "Architected a two-layer system to bridge the 'automation gap' in service robotics, enabling a PR2 robot to perform dynamic, multi-step tasks via natural language."
 
---- For the detailed project page (project.html) ---
+# For the detailed project page (project.html)
 subtitle: "Enabling Natural Language Control for Complex Robotic Tasks"
-code_url: "https://www.google.com/search?q=https://github.com/brianbosho/robochat"
+code_url: "https://github.com/brianbosho/robochat"
 role: "Co-Architect & Developer"
 technologies:
-
-Python
-
-LangChain
-
-GPT-4o
-
-FAISS
-
-RAG
-
-PyCRAM
+  - Python
+  - LangChain
+  - GPT-4o
+  - FAISS
+  - RAG
+  - PyCRAM
 contributions:
-
-System architecture design
-
-RoboCRAM backend API development
-
-RAG pipeline integration for contextual awareness
-
-Evaluation on a 30-task kitchen benchmark
+  - System architecture design
+  - RoboCRAM backend API development
+  - RAG pipeline integration for contextual awareness
+  - Evaluation on a 30-task kitchen benchmark
+---
 
 The Challenge: The "Automation Gap" in Service Robotics
 Most service robots are programmed for fixed functions and struggle with dynamic environments or novel user requests. This "automation gap" limits their usefulness, as non-expert users cannot easily command them to perform complex, multi-step tasks. Our goal was to create a system that allows anyone to control a sophisticated robot using simple, natural language.

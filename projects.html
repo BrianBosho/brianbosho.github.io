@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+navbar_title: Projects
+---
+
+<div class="row">
+    <!-- Main content column -->
+    <div class="col-12 col-lg-10">
+        <h2 class="pt-4">My Projects</h2>
+        <p class="lead">A showcase of my key research and engineering work.</p>
+        
+        <!-- This container holds the list of project items, styled like the publications list -->
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in site.projects reversed %}
+                {% include widgets/project_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- We can leave out the right-side navigation bar as it's not needed for projects -->
+</div>

@@ -1,0 +1,29 @@
+<!--
+*   `item` is a project document from the `_projects` collection.
+*   `hide_bottom_border` is a boolean that indicates whether to hide the bottom border of the item.
+*   `first` is a boolean that indicates whether this is the first item in the list.
+*   `last` is a boolean that indicates whether this is the last item in the list.
+-->
+<div class="d-flex flex-row py-3 {% unless hide_bottom_border %}border-bottom{% endunless %}">
+    <!-- Project Image -->
+    {% if item.image %}
+    <div class="flex-shrink-0 mr-3" style="width: 150px;">
+        <a href="{{ item.url | relative_url }}">
+            <img src="{{ item.image | relative_url }}" class="img-fluid rounded" alt="Project image for {{ item.title }}">
+        </a>
+    </div>
+    {% endif %}
+
+    <!-- Project Details -->
+    <div class="flex-grow-1">
+        <h5 class="mb-1">
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        </h5>
+        {% if item.context %}
+        <p class="mb-1 text-muted">{{ item.context }}</p>
+        {% endif %}
+        {% if item.summary %}
+        <p class="mb-1">{{ item.summary }}</p>
+        {% endif %}
+    </div>
+</div>
