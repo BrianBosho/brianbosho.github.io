@@ -13,12 +13,48 @@ navbar_title: Home
     {% include widgets/experience_card.html %}
 {% endif %}
 
+<!-- Teaching Experience Card -->
+<div class="card shadow-sm rounded-xl my-4">
+    <div class="card-body">
+        <h5 class="card-title font-weight-bold">Teaching Experience</h5>
+        <hr class="my-2">
+        <ul class="list-unstyled">
+            <li class="mb-2">
+                <strong class="mr-2">Spring 2025:</strong>
+                <a href="https://www.africa.engineering.cmu.edu/academics/courses/18-799-RW.html">Applied Computer Vision</a>
+                <span class="text-muted">(Graduate Teaching Assistant)</span>
+            </li>
+            <li>
+                <strong class="mr-2">Fall 2024:</strong>
+                <a href="https://www.africa.engineering.cmu.edu/academics/courses/04-650.html">Mathematical Foundations of Machine Learning</a>
+                <span class="text-muted">(Graduate Teaching Assistant)</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
 {% if site.data.display.homepage.show_news %}
     {% assign count_news = site.news | size %}
     {% if count_news > 0 %}
         {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
     {% endif %}
 {% endif %}
+
+<!-- Selected Projects Card -->
+<div class="card shadow-sm rounded-xl my-4">
+    <div class="card-body">
+        <h5 class="card-title font-weight-bold">Selected Projects</h5>
+        <p class="card-text text-muted">A brief overview of my key research and engineering work. <a href="/projects/">View all projects</a>.</p>
+        <hr class="my-2">
+        
+        <!-- This loop will find the 3 most recent projects -->
+        {% assign projects = site.projects | reverse %}
+        {% for item in projects limit:2 %}
+            {% include widgets/project_item.html item=item hide_bottom_border=forloop.last %}
+        {% endfor %}
+        
+    </div>
+</div>
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
