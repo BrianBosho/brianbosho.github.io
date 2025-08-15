@@ -4,7 +4,7 @@ title: "RoboCHAT: LLM-Powered Human-Robot Interaction"
 permalink: /projects/robochat/
 
 # For the project list page (project_item.html)
-image: "/assets/images/robochat/robochat_thumbnail.png"
+image: "assets/images/robochat/robochat.jpg"
 context: "Capstone Project at Carnegie Mellon University Africa"
 summary: "Architected a two-layer system to bridge the 'automation gap' in service robotics, enabling a PR2 robot to perform dynamic, multi-step tasks via natural language."
 
@@ -24,6 +24,9 @@ contributions:
   - RoboCRAM backend API development
   - RAG pipeline integration for contextual awareness
   - Evaluation on a 30-task kitchen benchmark
+
+date: 2025-06-01
+selected: false
 ---
 
 The Challenge: The "Automation Gap" in Service Robotics

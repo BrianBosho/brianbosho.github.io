@@ -4,7 +4,7 @@ title: "Safety-Critical Autonomous Driving Scenario Generation"
 permalink: /projects/safety-critical/
 
 # For the project list page (project_item.html)
-image: "/assets/images/autonomous-driving/safety_thumbnail.png"
+image: "assets/images/autonomous-driving/strive.jpeg"
 context: "Course Project: Principles and Engineering Applications of AI"
 summary: "Leveraged Variational Autoencoders (VAEs) to artificially generate a rich dataset of realistic and challenging scenarios to rigorously test and improve AV decision-making."
 
@@ -23,6 +23,8 @@ contributions:
   - Trajectory encoder implementation (LSTM vs GRU)
   - Result analysis & benchmarking
   - Literature review
+date: 2024-08-01
+selected: false
 ---
 
 The Challenge: The Scarcity of "Hard Cases" for Self-Driving Cars

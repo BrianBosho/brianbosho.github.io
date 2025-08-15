@@ -2,9 +2,10 @@
 layout: project
 title: "Automated Cryo-ET Particle Picking Pipeline"
 permalink: /projects/cryo-et/
+date: 2024-10-27
 
 # For the project list page (project_item.html)
-image: "/assets/images/cryoet/cryoet_thumbnail.png"
+image: "assets/images/cryoet/cryoet_icon.jpeg"
 context: "Research Internship at Xulab, Carnegie Mellon University"
 summary: "Engineered an end-to-end automated pipeline for Cryo-ET particle picking, addressing critical challenges of low SNR and intensive manual processing in computational biology."
 
@@ -24,6 +25,7 @@ contributions:
   - Automated data acquisition scripts
   - Data wrangling & format conversion
   - Full training & inference workflow management
+selected: true
 ---
 
 ### The Challenge: A Critical Bottleneck in Structural Biology

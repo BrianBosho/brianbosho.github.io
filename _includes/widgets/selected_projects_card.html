@@ -6,8 +6,8 @@
         <hr class="my-2">
         
         <!-- This loop will find the 2 most recent projects -->
-        {% assign projects = site.projects | reverse %}
-        {% for item in projects limit:2 %}
+        {% assign projects = site.projects | where: "selected", true | sort: "date" | reverse %}
+        {% for item in projects %}
             {% include widgets/project_item.html item=item hide_bottom_border=forloop.last %}
         {% endfor %}
         

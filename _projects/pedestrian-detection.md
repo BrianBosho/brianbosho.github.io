@@ -4,7 +4,7 @@ title: "Computer Vision for Pedestrian Detection & Depth Estimation"
 permalink: /projects/pedestrian-detection/
 
 # For the project list page (project_item.html)
-image: "/assets/images/pedestrian-detection/pedestrian_thumbnail.png"
+image: "assets/images/pedestrian-detection/depthest.jpg"
 context: "Course Project: Applied Computer Vision"
 summary: "Developed a two-stage perception system for autonomous vehicles, combining YOLOv5 for object detection and MiDaS for monocular depth estimation to identify and locate pedestrians in urban scenes."
 
@@ -23,6 +23,8 @@ contributions:
   - MiDaS integration for depth estimation
   - End-to-end pipeline development
   - Performance evaluation (precision/recall)
+date: 2024-05-15
+selected: false
 ---
 
 The Challenge: Ensuring Pedestrian Safety in Autonomous Driving

@@ -7,13 +7,13 @@ positions:
   name: Research Associate, Carnegie Mellon University Africa
 # - name: Graduate Teaching Assistant, Carnegie Mellon University Africa
 
-email: "briankiupkirui03@gmail.com"
+email: "briankipkirui03@gmail.com"
 cv_link: /assets/pdf/BrianKipkirui_CV.pdf
-gscholar: your_scholar_id_here   # Replace with actual Google Scholar ID
+# gscholar: your_scholar_id_here   # Replace with actual Google Scholar ID
 github: brianbosho
-twitter: ""                      # Add if you want, without '@'
-linkedin: brian-kipkirui
-orcid: ""                        # Add if applicable
+# twitter: ""                      # Add if you want, without '@'
+linkedin: briankipkirui
+# orcid: ""                        # Add if applicable
 
 short_bio_text_justify: false
 short_bio: >-
@@ -36,7 +36,7 @@ education:
   logo: /assets/images/badges/cmu_logo.png
   position: >- 
     M.S. in Engineering Artificial Intelligence <br/>
-    GPA: 3.97/4.0
+    
   date:  May 2025
 - name: Jomo Kenyatta University of Agriculture and Technology
   logo: /assets/images/badges/jkuat_logo.png
