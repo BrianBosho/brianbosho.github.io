@@ -1,44 +1,102 @@
 ---
 layout: default
 ---
-<div class="container mt-5 mb-5">
-    <header class="mb-5">
-        <p class="text-muted">{{ page.context }}</p>
-        <h1 class="font-weight-bold">{{ page.title }}</h1>
-        <p class="lead">{{ page.subtitle }}</p>
-        {% if page.code_url %}
-        <a href="{{ page.code_url }}" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">View Code on GitHub</a>
-        {% endif %}
-    </header>
+<style>
+    /* Custom styles for the project page */
+    .project-header {
+        background-color: #f8f9fa; /* A light grey background */
+        border-bottom: 1px solid #dee2e6;
+        padding: 3rem 0; /* Reduced padding */
+    }
+    .project-header h1 {
+        font-size: 2.5rem; /* Controlled title size */
+    }
+    .project-content h3 {
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .sidebar-card {
+        position: sticky;
+        top: 2rem;
+        border: none; /* Remove default card border */
+    }
+    .sidebar-card .card-body {
+        padding: 1.5rem;
+    }
+    .tech-tag {
+        display: inline-block;
+        background-color: #e9ecef;
+        border-radius: 9999px; /* Pill shape */
+        padding: 0.35rem 0.75rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #495057;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        transition: all 0.2s ease-in-out;
+    }
+    .tech-tag:hover {
+        background-color: #d3d9df;
+    }
+    .sidebar-card h6 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #6c757d;
+        letter-spacing: 0.5px;
+        margin-top: 1.5rem;
+    }
+</style>
 
+<!-- ======================================================================= -->
+<!-- PROJECT HEADER -->
+<!-- ======================================================================= -->
+<div class="project-header">
+    <div class="container">
+        <p class="text-primary font-weight-bold">{{ page.context }}</p>
+        <h1 class="font-weight-bold mt-2">{{ page.title }}</h1>
+        <p class="lead text-muted mt-3">{{ page.subtitle }}</p>
+        {% if page.code_url %}
+        <a href="{{ page.code_url }}" class="btn btn-primary btn-lg mt-3" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github mr-2"></i>View Code on GitHub
+        </a>
+        {% endif %}
+    </div>
+</div>
+
+
+<!-- ======================================================================= -->
+<!-- MAIN CONTENT -->
+<!-- ======================================================================= -->
+<div class="container mt-5 mb-5">
     <div class="row">
+        <!-- Left Column: Main Content -->
         <div class="col-lg-8">
-            <!-- Main markdown content is rendered here -->
             <div class="project-content">
                 {{ content }}
             </div>
         </div>
+
+        <!-- Right Column: Sticky Sidebar -->
         <div class="col-lg-4">
-            <div class="card shadow-sm" style="position: sticky; top: 2rem;">
+            <div class="sidebar-card card shadow-sm rounded-xl">
                 <div class="card-body">
-                    <h5 class="card-title">Project Details</h5>
+                    {% if page.image %}
+                    <img src="{{ page.image | relative_url }}" class="img-fluid rounded-xl shadow-sm mb-4" alt="{{ page.title }} icon">
+                    {% endif %}
+                    <h5 class="card-title font-weight-bold">Project Details</h5>
                     <hr>
+                    
                     <h6>My Role</h6>
                     <p>{{ page.role }}</p>
                     
                     <h6>Key Technologies</h6>
-                    <p>
-                    {% for tech in page.technologies %}
-                        <span class="badge badge-light p-2 mr-1 mb-1">{{ tech }}</span>
-                    {% endfor %}
-                    </p>
-
-                    <h6>Core Contributions</h6>
-                    <ul>
-                    {% for contribution in page.contributions %}
-                        <li>{{ contribution }}</li>
-                    {% endfor %}
-                    </ul>
+                    <div class="tech-tags">
+                        {% for tech in page.technologies %}
+                        <span class="tech-tag">{{ tech }}</span>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
