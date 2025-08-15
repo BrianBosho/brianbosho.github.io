@@ -1,0 +1,15 @@
+<!-- Selected Projects Card -->
+<div class="card shadow-sm rounded-xl my-4">
+    <div class="card-body">
+        <h5 class="card-title font-weight-bold">Selected Projects</h5>
+        <p class="card-text text-muted">A brief overview of my key research and engineering work. <a href="/projects/">View all projects</a>.</p>
+        <hr class="my-2">
+        
+        <!-- This loop will find the 2 most recent projects -->
+        {% assign projects = site.projects | reverse %}
+        {% for item in projects limit:2 %}
+            {% include widgets/project_item.html item=item hide_bottom_border=forloop.last %}
+        {% endfor %}
+        
+    </div>
+</div>
