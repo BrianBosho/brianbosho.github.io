@@ -1,6 +1,6 @@
 layout: project
 title: "Automated Cryo-ET Particle Picking Pipeline"
-permalink: /projects/cryo-et/
+permalink: /project/cryo-et/
 
 --- For the project list page (project_item.html) ---
 image: "/assets/img/projects/cryoet_thumbnail.png"

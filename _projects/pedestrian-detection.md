@@ -1,6 +1,6 @@
 layout: project
 title: "Computer Vision for Pedestrian Detection & Depth Estimation"
-permalink: /projects/pedestrian-detection/
+permalink: /project/pedestrian-detection/
 
 --- For the project list page (project_item.html) ---
 image: "/assets/img/projects/pedestrian_thumbnail.png"
