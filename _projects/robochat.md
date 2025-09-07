@@ -45,20 +45,3 @@ To make the system context-aware, I integrated a Retrieval-Augmented Generation 
 ### Impact
 We evaluated RoboCHAT on a benchmark of 30 complex kitchen tasks. The system achieved 89% command resolution accuracy and 85% parameter resolution accuracy, successfully transforming a fixed-function robot into a flexible, user-centric assistant. This work demonstrates a viable path toward making advanced service robots accessible and useful in everyday human environments.
 
-
-The Challenge: The "Automation Gap" in Service Robotics
-Most service robots are programmed for fixed functions and struggle with dynamic environments or novel user requests. This "automation gap" limits their usefulness, as non-expert users cannot easily command them to perform complex, multi-step tasks. Our goal was to create a system that allows anyone to control a sophisticated robot using simple, natural language.
-
-A diagram showing the two-layer architecture of RoboCHAT, with the LLM-agent translating user commands into executable robot actions.
-
-My Solution: A Two-Layer System for Intelligent Control
-I co-architected a system with two primary components:
-
-RoboCRAM (The Backend): I developed a middleware API that abstracted the complex, low-level functions of the PyCRAM robotics framework into a set of clear, high-level commands.
-
-RoboCHAT (The Frontend): We built an advanced AI agent using GPT-4o and the LangChain framework. This agent interprets a user's natural language commands.
-
-To make the system context-aware, I integrated a Retrieval-Augmented Generation (RAG) pipeline using a FAISS vector store. This allows the LLM to access a knowledge base of the robot's capabilities and the objects in its environment, enabling it to resolve ambiguous commands.
-
-Impact
-We evaluated RoboCHAT on a benchmark of 30 complex kitchen tasks. The system achieved 89% command resolution accuracy and 85% parameter resolution accuracy, successfully transforming a fixed-function robot into a flexible, user-centric assistant. This work demonstrates a viable path toward making advanced service robots accessible and useful in everyday human environments.
