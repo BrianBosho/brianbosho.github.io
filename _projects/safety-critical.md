@@ -1,44 +1,62 @@
 ---
 layout: project
-title: "Safety-Critical Autonomous Driving Scenario Generation"
-permalink: /projects/safety-critical/
+title: "Adversarial Scenario Generation for Autonomous Driving"
+permalink: /projects/scenario-generation/
+date: 2024-04-20
 
-# For the project list page (project_item.html)
 image: "assets/images/autonomous-driving/strive.jpeg"
-context: "Course Project: Principles and Engineering Applications of AI"
-summary: "Leveraged Variational Autoencoders (VAEs) to artificially generate a rich dataset of realistic and challenging scenarios to rigorously test and improve AV decision-making."
+context: "Course Project, Carnegie Mellon University Africa"
+summary: "Explored adversarial generation of rare driving scenarios using sequence models and latent space perturbations to improve robustness of autonomous planners."
 
-# For the detailed project page (project.html)
-subtitle: "Improving AV Safety by Generating Challenging Scenarios with Variational Autoencoders"
-code_url: "https://github.com/brianbosho/safety-critical-generation"
-role: "Co-Researcher & Developer"
+subtitle: "Generating Safety-Critical Driving Scenarios"
+code_url: "https://github.com/brianbosho/adversarial-scenarios"
+role: "Team Member (Model Design & Experiments)"
 technologies:
   - Python
   - PyTorch
-  - VAEs
-  - LSTMs
-  - GRUs
-contributions:
-  - VAE model design
-  - Trajectory encoder implementation (LSTM vs GRU)
-  - Result analysis & benchmarking
-  - Literature review
-date: 2024-08-01
-selected: false
+  - LSTM / GRU
+  - Variational Autoencoders (VAE)
+  - nuScenes Dataset
+selected: true
 ---
 
-### The Challenge: The Scarcity of "Hard Cases" for Self-Driving Cars
-Autonomous vehicles (AVs) learn from data, but real-world driving data is overwhelmingly mundane. Safety-critical scenarios are extremely rare, making it difficult to robustly train and validate AV planners. Our goal was to artificially generate a rich dataset of realistic, challenging scenarios to rigorously test AV decision-making.
+## At a Glance
+- Built a pipeline to **generate rare, safety-critical driving scenarios**  
+- Encoded traffic scenes into a **latent space** using VAEs  
+- Applied **adversarial perturbations** to generate challenging variations  
+- Tested different sequence encoders (MLP, GRU, LSTM) on nuScenes data  
 
-A diagram illustrating how a Variational Autoencoder (VAE) can learn from existing scenarios to generate new, more challenging ones.
+---
 
-### My Solution: Enhancing Trajectory Encoding in a VAE Framework
-Building on the STRIVE framework, our work focused on a critical component: the trajectory encoder. My hypothesis was that a more powerful sequence-to-sequence architecture could capture temporal dynamics more effectively. My contributions included:
+## The Challenge
+Most autonomous driving datasets capture regular, safe situations.  
+But autonomous planners also need to handle **rare, dangerous events** (e.g. sudden braking, collisions, near-misses).  
+The goal was to generate such scenarios automatically for testing and training.  
 
-*   **Implementing a Seq2Seq Encoder**: I implemented an LSTM-based sequence-to-sequence encoder within the VAE architecture.
-*   **Benchmarking Architectures**: I systematically compared the performance of our LSTM encoder against baseline GRU and MLP encoders.
-*   **Analyzing Scenario Quality**: We evaluated the generated scenarios based on both realism and challenge.
+---
 
-### Impact
-Our experiments demonstrated that using a more sophisticated sequential encoder (like an LSTM) leads to a higher-quality latent space. This allows the VAE to generate scenarios that more effectively probe the weaknesses of an AV's planning module, ultimately helping to build safer and more trustworthy autonomous vehicles.
+## What We Did
+Our approach used a **variational autoencoder (VAE)** framework:  
 
+- **Encoding**: represented past and future agent trajectories in a latent space.  
+- **Traffic modeling**: incorporated agent interactions using sequence models.  
+- **Adversarial perturbations**: modified latent vectors to produce new, harder scenarios.  
+- **Evaluation**: compared encoder types (MLP, GRU, LSTM) on reconstruction quality and scenario realism.  
+
+---
+
+## Results
+- **LSTMs** achieved the lowest overall loss, capturing sequential patterns well.  
+- **GRUs** performed better on positional accuracy and produced fewer collisions.  
+- The generated scenarios were diverse, including more challenging corner cases than the original dataset.  
+
+---
+
+## Impact
+This project showed how adversarial generation can enrich datasets with **rare but important driving situations**, making autonomous systems more robust and safer to deploy.  
+
+---
+
+## Resources
+- [GitHub Repository](https://github.com/brianbosho/adversarial-scenarios)  
+- [Slides / Report](link-if-available)  

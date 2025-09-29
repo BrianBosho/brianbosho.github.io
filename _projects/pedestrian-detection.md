@@ -1,58 +1,62 @@
 ---
 layout: project
-title: "Computer Vision for Pedestrian Detection & Depth Estimation"
+title: "Pedestrian Detection and Depth Estimation for Autonomous Vehicles"
 permalink: /projects/pedestrian-detection/
+date: 2024-05-15
 
-# For the project list page (project_item.html)
 image: "assets/images/pedestrian-detection/depthest.jpg"
-context: "Course Project: Applied Computer Vision"
-summary: "Developed a two-stage perception system for autonomous vehicles, combining YOLOv5 for object detection and MiDaS for monocular depth estimation to identify and locate pedestrians in urban scenes."
+context: "Course Project, Carnegie Mellon University Africa"
+summary: "Built a computer vision pipeline that detects pedestrians with YOLOv5 and estimates their distance using monocular depth estimation."
 
-# For the detailed project page (project.html)
-subtitle: "A Two-Stage Perception System for Autonomous Vehicle Safety"
+subtitle: "Computer Vision for Safer Autonomous Driving"
 code_url: "https://github.com/brianbosho/pedestrian-detection"
-role: "Co-Researcher & Developer"
+role: "Team Member (Detection & Depth Integration)"
 technologies:
   - Python
   - PyTorch
   - YOLOv5
   - MiDaS
   - CityPersons Dataset
-contributions:
-  - YOLOv5 model fine-tuning
-  - MiDaS integration for depth estimation
-  - End-to-end pipeline development
-  - Performance evaluation (precision/recall)
-date: 2024-05-15
-selected: false
+  - OpenCV
+selected: true
 ---
 
-### The Challenge: Ensuring Pedestrian Safety in Autonomous Driving
-A primary function of an autonomous vehicle's (AV) perception system is to reliably detect vulnerable road users, especially pedestrians. This task is challenging due to varying lighting conditions, occlusions, and diverse human appearances. Our objective was to build a robust system using only a single camera (monocular vision) to not only detect pedestrians but also to estimate their distance—critical information for the vehicle's planning module.
+## At a Glance
+- Fine-tuned **YOLOv5** on the CityPersons dataset for pedestrian detection  
+- Integrated **MiDaS** for monocular depth estimation  
+- Combined outputs to label pedestrians with both bounding boxes and distance estimates  
+- Demonstrated live inference on images and video frames  
 
-An example of the system identifying a pedestrian with a bounding box and estimating their distance from the vehicle.
+---
 
-### My Solution: A Two-Stage Detection and Estimation Pipeline
-I co-developed a perception pipeline that processes an image in two distinct stages:
+## The Challenge
+Autonomous vehicles need to detect pedestrians quickly and accurately, even with limited sensors.  
+Using just a monocular camera is cost-effective, but makes depth estimation especially challenging.  
 
-*   **Pedestrian Detection with YOLOv5**: We first used YOLOv5, a state-of-the-art, real-time object detection model. I was responsible for fine-tuning the pre-trained model on the CityPersons dataset, a large-scale dataset specifically focused on pedestrians in urban environments. This specialization significantly improved the model's accuracy in identifying people.
-*   **Monocular Depth Estimation with MiDaS**: Once a pedestrian is detected and a bounding box is drawn, the system crops that specific region of interest. We then feed this cropped image into the MiDaS model. MiDaS is a powerful deep learning model that excels at estimating the depth of objects from a single 2D image, providing the crucial distance information needed for safe navigation.
+---
 
-### Impact
-Our integrated system successfully demonstrated the viability of a monocular, two-stage approach for pedestrian perception. After fine-tuning, the YOLOv5 detection model achieved a precision of 0.816 and a recall of 0.538 on the validation set. This project provides a strong proof-of-concept for building cost-effective yet capable perception systems for autonomous and driver-assistive technologies, contributing to the overall goal of improving traffic safety.
+## What We Did
+As part of a team project, I focused on building the detection and depth pipeline:  
 
+- **Detection**: trained YOLOv5 on the CityPersons dataset to identify pedestrians in urban scenes.  
+- **Depth estimation**: used MiDaS (a monocular depth estimation model) to compute distance from single RGB frames.  
+- **Integration**: combined the two outputs so each detected pedestrian was annotated with an estimated distance.  
 
-The Challenge: Ensuring Pedestrian Safety in Autonomous Driving
-A primary function of an autonomous vehicle's (AV) perception system is to reliably detect vulnerable road users, especially pedestrians. This task is challenging due to varying lighting conditions, occlusions, and diverse human appearances. Our objective was to build a robust system using only a single camera (monocular vision) to not only detect pedestrians but also to estimate their distance—critical information for the vehicle's planning module.
+---
 
-An example of the system identifying a pedestrian with a bounding box and estimating their distance from the vehicle.
+## Results
+- YOLOv5 achieved good detection accuracy after fine-tuning.  
+- The combined system produced bounding boxes with approximate depth for each pedestrian.  
+- Demonstrated the approach in a live demo, processing video frames in real time.  
 
-My Solution: A Two-Stage Detection and Estimation Pipeline
-I co-developed a perception pipeline that processes an image in two distinct stages:
+---
 
-Pedestrian Detection with YOLOv5: We first used YOLOv5, a state-of-the-art, real-time object detection model. I was responsible for fine-tuning the pre-trained model on the CityPersons dataset, a large-scale dataset specifically focused on pedestrians in urban environments. This specialization significantly improved the model's accuracy in identifying people.
+## Impact
+This project showed that it’s possible to use affordable, monocular-camera setups to improve pedestrian safety in autonomous driving.  
+It’s a small step toward building robust perception systems for traffic in resource-constrained contexts.  
 
-Monocular Depth Estimation with MiDaS: Once a pedestrian is detected and a bounding box is drawn, the system crops that specific region of interest. We then feed this cropped image into the MiDaS model. MiDaS is a powerful deep learning model that excels at estimating the depth of objects from a single 2D image, providing the crucial distance information needed for safe navigation.
+---
 
-Impact
-Our integrated system successfully demonstrated the viability of a monocular, two-stage approach for pedestrian perception. After fine-tuning, the YOLOv5 detection model achieved a precision of 0.816 and a recall of 0.538 on the validation set. This project provides a strong proof-of-concept for building cost-effective yet capable perception systems for autonomous and driver-assistive technologies, contributing to the overall goal of improving traffic safety.
+## Resources
+- [GitHub Repository](https://github.com/brianbosho/pedestrian-detection)  
+- [Slides / Report](link-if-available)  
